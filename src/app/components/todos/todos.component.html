@@ -1,4 +1,4 @@
-<p>Todos works!</p>
+<app-addtodo (addTodo)='addTodo($event)'></app-addtodo>
 <app-todo-item *ngFor="let todo of todos" 
 [todo]='todo'
 (deleteTodo)='deleteTodo($event)'
